@@ -1,0 +1,63 @@
+/* RevealGSAP.module.css */
+.container {
+  position: relative;
+  display: block;
+  font: inherit;
+  line-height: inherit;
+  white-space: pre-wrap; /* preserve wrapping & \n */
+}
+
+/* muted copy underneath */
+.muted {
+  color: rgba(255,255,255,0.25);
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+/* inline tokens used for measuring */
+.word {
+  display: inline;
+  white-space: pre;
+}
+
+/* overlay containing absolute-positioned line wrappers */
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}
+
+/* per-line wrapper: positioned where the visual line is.
+   This wrapper has overflow:hidden and its width is animated 0 -> fullWidth */
+.line {
+  position: absolute;
+  overflow: hidden;     /* key: hides unrevealed text */
+  pointer-events: none;
+  white-space: pre;
+  /* start collapsed — we will set width inline to 0 initially */
+}
+
+/* inner text inside the line wrapper; full width, not transformed */
+.fill {
+  display: inline-block;
+  width: 100%;
+  color: #ffffff;
+  font: inherit;
+  line-height: inherit;
+  white-space: pre;
+}
+
+/* optional subtle feather on the right edge (visual smoothing) */
+.line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 18px;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0));
+  opacity: 0.9;
+}

@@ -1,0 +1,52 @@
+.wrap {
+  display: inline-block;
+  position: relative;
+  /* match the line-height of the surrounding text */
+  height: 1.2em;        /* fallback if 1lh isn't supported */
+  line-height: 1.2em;
+  height: 1lh;          /* modern: equals computed line-height of parent */
+  line-height: 1lh;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+/* Hidden sizer to give the wrapper the width of the widest word */
+.sizer {
+  display: grid;        /* grid makes all children stack in the same cell */
+  visibility: hidden;   /* not visible, but still affects layout size */
+  white-space: nowrap;  /* measure words without wrapping */
+  pointer-events: none;
+  user-select: none;
+  font: inherit;
+  line-height: inherit;
+}
+.sizer > span {
+  grid-area: 1 / 1;     /* stack them */
+}
+
+/* Animated words layered on top */
+.word {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: inherit;
+  line-height: inherit;
+  color: #C94CD7;       /* your purple */
+  will-change: transform, opacity;
+}
+
+.incoming {
+  animation: slideIn 0.8s ease both;
+}
+.outgoing {
+  animation: slideOut 0.8s ease both;
+}
+
+@keyframes slideIn {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0%);    opacity: 1; }
+}
+@keyframes slideOut {
+  0%   { transform: translateY(0%);   opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0; }
+}

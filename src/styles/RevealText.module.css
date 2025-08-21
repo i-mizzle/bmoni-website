@@ -1,0 +1,49 @@
+.reveal {
+  --progress: 0;             /* 0..1, controlled from JS */
+  display: block;            /* keep lines and wrapping */
+  position: relative;
+  overflow: visible;
+  font: inherit;
+  line-height: inherit;
+  white-space: pre-wrap;     /* preserve newlines and wrapping */
+}
+
+/* muted base layer (always visible) */
+.reveal__muted {
+  color: rgba(255, 255, 255, 0.25);
+  font: inherit;
+  line-height: inherit;
+  display: block;
+}
+
+/* top layer (white) is masked to show only left portion */
+.reveal__fill {
+  position: absolute;
+  inset: 0;                  /* cover the same area as muted text */
+  color: #ffffff;
+  font: inherit;
+  line-height: inherit;
+  display: block;
+  pointer-events: none;
+  /* Use a CSS mask so only left portion is visible according to --progress */
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    black calc(var(--progress) * 100%),
+    transparent calc(var(--progress) * 100% + 0.01%)
+  );
+  mask-image: linear-gradient(
+    90deg,
+    black calc(var(--progress) * 100%),
+    transparent calc(var(--progress) * 100% + 0.01%)
+  );
+  /* small fade on the reveal edge to soften the transition */
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+/* optional: a slight transition so the mask movement isn't too jarring (kept tiny
+   because we're updating per-scroll) */
+.reveal__fill,
+.reveal__muted {
+  transition: color 220ms linear;
+}

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.font-playfair-display {
+  font-family: var(--font-playfair-display), serif;
+}
+
+body {
+  font-family: 'Inter' sans-serif;
+}
+
+.hero-ellipse {
+  position: absolute;
+  background: #F7E6F7;
+  mix-blend-mode: overlay;
+  filter: blur(15px);
+}
+
+.reveal-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 50px;
+  transition: color 0.8s ease, opacity 1s ease;
+}
+
+.reveal-text.visible {
+  color: white;
+  opacity: 1;
+}
+
+/* .panels-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: auto; height: 100vh;
+}
+
+.panel {
+  scroll-snap-align: start;
+} */
+

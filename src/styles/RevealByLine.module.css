@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+  display: block;
+  overflow: visible;
+  font: inherit;
+  line-height: inherit;
+}
+
+/* base muted text: each word is wrapped in a .word span */
+.muted {
+  color: rgba(255,255,255,0.25);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* each word span is inline so layout can wrap naturally */
+.word {
+  display: inline;
+  white-space: pre;
+}
+
+/* overlay layer that holds per-line fills */
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+}
+
+/* a single fill line */
+.line {
+  position: absolute;
+  overflow: hidden;
+  white-space: pre;
+  pointer-events: none;
+}
+
+/* inner text inside the line that will be clipped by width */
+.line__text {
+  display: inline-block;
+  white-space: pre;
+  color: #ffffff;
+  font: inherit;
+  line-height: inherit;
+}
