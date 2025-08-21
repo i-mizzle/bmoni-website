@@ -28,22 +28,7 @@ const Faq = () => {
     ]
     return (
         <section className='w-full px-[32px] pt-[32px] pb-[150px] bg-[#270A26] relative'>
-            {/* <div className='w-full h-screen absolute top-0 left-0' style={{
-                backgroundImage: "url(/img/faq-bbg-pattern.svg)",
-                backgroundSize: '100%',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center top',
-                WebkitMaskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
-                WebkitMaskRepeat: "no-repeat",
-                WebkitMaskPosition: "center",
-                WebkitMaskSize: "cover",
-                maskImage:
-                "radial-gradient(circle at center, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
-                maskRepeat: "no-repeat",
-                maskPosition: "center",
-                maskSize: "cover",
-            }} /> */}
-            <div className='w-full rounded-[16px] px-[56px] py-[64px] bg-[#F7E6F7] flex items-start justify-between gap-x-[64px]'>
+            <div className='w-full rounded-[16px] z-50 px-[56px] py-[64px] bg-[#F7E6F7] flex items-start justify-between gap-x-[64px]'>
                 <div className='w-full'>
                     <h1 className='text-[48px] leading-[56px] text-[#270A26] -tracking-[0.02em] font-[500] font-playfair-display'>Frequently Asked <br />Questions</h1>
                 </div>
@@ -63,6 +48,22 @@ const Faq = () => {
                     ))}
                 </div>
             </div>
+            {/* <div className='w-full h-screen absolute top-0 left-0 z-10' style={{
+                backgroundImage: "url(/img/faq-bg-pattern.svg)",
+                backgroundSize: '100%',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center top',
+                WebkitMaskImage: "radial-gradient(circle at center, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
+                WebkitMaskRepeat: "no-repeat",
+                WebkitMaskPosition: "center",
+                WebkitMaskSize: "cover",
+                maskImage:
+                "radial-gradient(circle at center, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%)",
+                maskRepeat: "no-repeat",
+                maskPosition: "center",
+                maskSize: "cover",
+            }} /> */}
+            
         </section>
     )
 }
