@@ -3,7 +3,7 @@ import React from 'react'
 
 const GetStartedSteps = () => {
   return (
-     <section className="relative w-full bg-[#270A26] h-[400vh] px-[100px]">
+     <section className="relative w-full bg-[#270A26] h-inherit xl:h-[400vh] px-[40px] xl:px-[100px] pb-[100px]">
         {/* Sticky Title */}
         <div className="hidden xl:block xl:sticky top-0 z-20 py-[50px] w-[30%] mx-[35%] h-[100vh]">
             <div className='relative w-full'>
@@ -40,19 +40,19 @@ const GetStartedSteps = () => {
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>With 3 easy steps</h1>
             </div>
         </div>
-        <div className='w-full flex flex-row-reverse h-[100vh] text-white'>
+        <div className='w-full flex flex-row-reverse h-inherit xl:h-[100vh] text-white'>
             <div className='w-full xl:w-[30%] pt-[150px]'>
                 <p className='mb-[16px] text-[#FF49E7] font-[500] text-[24px] leading-[32px]'>STEP 1</p>
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>Download the BMONI app</h1>
             </div>
         </div>
-        <div className='w-full h-[100vh] text-white'>
+        <div className='w-full h-inherit xl:h-[100vh] text-white'>
             <div className='w-full xl:w-[30%] pt-[150px]'>
                 <p className='mb-[16px] text-[#FF49E7] font-[500] text-[24px] leading-[32px]'>STEP 2</p>
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>Complete KYC procedures and make your first deposit</h1>
             </div>
         </div>
-        <div className='w-full flex flex-row-reverse h-[100vh] text-white'>
+        <div className='w-full flex flex-row-reverse h-inherit xl:h-[100vh] text-white'>
             <div className='w-full xl:w-[30%] pt-[150px]'>
                 <p className='mb-[16px] text-[#FF49E7] font-[500] text-[24px] leading-[32px]'>STEP 3</p>
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>Start enjoying zero boundaries with your money.</h1>

@@ -4,10 +4,10 @@ import React from 'react'
 const CallToAction = () => {
   return (
     <>
-        <section className=' w-full px-[80px] bg-[#F7E6F7] pt-[175px]'>
-            <div className='w-full flex items-center justify-between gap-x-[64px]'>
+        <section className='w-full px-[40px] xl:px-[80px] bg-[#F7E6F7] pt-[175px]'>
+            <div className='w-full flex flex-col xl:flex-row items-center justify-between gap-x-[64px]'>
                 <div className='w-full'>
-                    <h3 className='font-playfair-display font-[500] text-[48px] leading-[60px] -tracking-[0.02em] text-[#320032]'>Ready to actually take your <br />money moves global?</h3>
+                    <h3 className='font-playfair-display font-[500] text-[32px] leading-[40px] xl:text-[48px] xl:leading-[60px] -tracking-[0.02em] text-[#320032]'>Ready to actually take your <br className='hidden xl:block' />money moves global?</h3>
 
                     <p className='text-[#5D395D] text-[20px] leading-[30px] mt-[24px]'>Get started with BMONI today</p>
 
@@ -29,7 +29,7 @@ const CallToAction = () => {
                     </div>
                 </div>
                 <div className='w-full flex items-end'>
-                    <div className='w-[90%] mx-auto relative h-[400px]'>
+                    <div className='w-full xl:w-[90%] -mb-[100px] xl:mb-0 mx-auto relative h-[400px]'>
                         <Image 
                             alt='mockup' 
                             src={`/img/cta-phone.png`} 
