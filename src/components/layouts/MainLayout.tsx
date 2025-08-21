@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 import { Inter, Playfair_Display } from "next/font/google";
 import Footer from '../partials/Footer';
 import Header from '../partials/Header';
+import CrispChat from '../elements/CrispChat';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -26,10 +27,13 @@ interface LayoutProps {
 
 export default function MainLayout({ children }: LayoutProps) {
   return (
-    <div className={`${inter.variable} ${playfair.variable} min-h-screen`}>
-      <Header />
-      <main className="mx-auto">{children}</main>
-      <Footer />
-    </div>
+    <>
+      <div className={`${inter.variable} ${playfair.variable} min-h-screen`}>
+        <Header />
+        <main className="mx-auto">{children}</main>
+        <Footer />
+      </div>
+      <CrispChat />
+    </>
   )
 }
