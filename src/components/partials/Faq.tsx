@@ -27,8 +27,8 @@ const Faq = () => {
         },
     ]
     return (
-        <section className='w-full px-[32px] pt-[32px] pb-[150px] bg-[#270A26] relative'>
-            <div className='w-full rounded-[16px] z-50 px-[56px] py-[64px] bg-[#F7E6F7] flex items-start justify-between gap-x-[64px]'>
+        <section className='w-full p-[20px] xl:px-[32px] xl:pt-[32px] pb-[150px] bg-[#270A26] relative'>
+            <div className='w-full rounded-[16px] z-50 px-[25px] xl:px-[56px] py-[20px] xl:py-[64px] bg-[#F7E6F7] xl:flex items-start justify-between gap-x-[64px]'>
                 <div className='w-full'>
                     <h1 className='text-[48px] leading-[56px] text-[#270A26] -tracking-[0.02em] font-[500] font-playfair-display'>Frequently Asked <br />Questions</h1>
                 </div>

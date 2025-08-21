@@ -12,12 +12,12 @@ export default function Home() {
     <MainLayout>
       <LandingHero />
 
-      <section className="w-full bg-[#270A26] min-h-screen p-[32px]">
-        <div className="w-1/3 mx-auto text-center mb-[65px]">
+      <section className="w-full bg-[#270A26] h-inherit min-h-screen p-[20px] xl:p-[32px]">
+        <div className="w-full px-[20px] xl:w-1/3 mx-auto text-center mb-[65px]">
           <h1 className="font-playfair-display font-[500] text-white text-[48px] leading-[56px]">Everything you want from your money</h1>
         </div>
-        <div className="flex items-stretch gap-x-[16px]">
-          <div className="w-[40%] bg-[#EAAEE8] rounded-[16px]">
+        <div className="xl:flex items-stretch gap-x-[16px]">
+          <div className="w-full xl:w-[40%] bg-[#EAAEE8] rounded-[16px]">
             <div className="h-[320px] w-full rounded-t-[16px]"
               style={{
                 backgroundImage: "url(/img/wave-pattern.svg)",
@@ -32,26 +32,45 @@ export default function Home() {
                   backgroundSize: 'cover',
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center center'
-              }} />
-                            </div>
+                }} />
+              </div>
             <div className="p-[32px]">
               <h3 className="text-[30px] leading-[38px] font-playfair-display font-[500] -leading-[0.2em] text-[#270A26] mb-[12px]">Multi-currency<br /> local wire details</h3>
               <p className="leading-[24px] font-[400] text-[#370E36]">Receive money through local NGN and USD virtual accounts, no matter where you are. Perfect for freelancers, family support, and global payments.</p>
             </div>
           </div>
-          <div className="w-[60%] bg-[#EAAEE8] rounded-[16px]">
-
-          </div>
+          <div className="w-full xl:w-[60%] bg-[#EAAEE8] rounded-[16px]  mt-[16px] xl:mt-0">
+              <div className="h-[320px] w-full rounded-t-[16px]"
+                style={{
+                  backgroundImage: "url(/img/wave-pattern.svg)",
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center top'
+                }}
+              >
+                {/* <div className="w-full relative h-[350px] mt-[50px]" 
+                  style={{
+                    backgroundImage: "url(/img/multi-currency-illustration.svg)",
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center center'
+                }} /> */}
+              </div>
+              <div className="p-[32px]">
+                <h3 className="text-[30px] leading-[38px] font-playfair-display font-[500] -leading-[0.2em] text-[#270A26] mb-[12px]">Card for everything</h3>
+                <p className="leading-[24px] font-[400] text-[#370E36]">Create and manage multiple virtual or physical cards for everything  — entertainment subscriptions, travel, household bills, or everyday spending — in one tap and from your account.</p>
+              </div>
+            </div>
         </div>
-        <div className="flex items-stretch gap-x-[16px] mt-[16px]">
-          <div className="w-1/3 bg-[#EAAEE8] rounded-[16px]">
+        <div className="xl:flex items-stretch gap-x-[16px] mt-[16px]">
+          <div className="w-full xl:w-1/3 bg-[#EAAEE8] rounded-[16px]">
             <div className="h-[320px] w-full rounded-t-[16px]"
               style={{
                 backgroundImage: "url(/img/wave-pattern.svg)",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center top'
-            }}
+              }}
             >
               {/* <div className="w-full relative h-[350px] mt-[50px]" 
                 style={{
@@ -60,17 +79,55 @@ export default function Home() {
                   backgroundRepeat: 'no-repeat',
                   backgroundPosition: 'center center'
               }} /> */}
-                            </div>
+            </div>
             <div className="p-[32px]">
               <h3 className="text-[30px] leading-[38px] font-playfair-display font-[500] -leading-[0.2em] text-[#270A26] mb-[12px]">Preserve your funds</h3>
               <p className="leading-[24px] font-[400] text-[#370E36]">Your funds are instantly converted to stable Naira and USD automatically, which protects it from inflation and allows you to earn interest while you&apos;re at it.</p>
             </div>
           </div>
-          <div className="w-1/3 bg-[#EAAEE8] rounded-[16px]">
-
+          <div className="w-full xl:w-1/3 bg-[#EAAEE8] rounded-[16px] mt-[16px] xl:mt-0">
+            <div className="h-[320px] w-full rounded-t-[16px]"
+              style={{
+                backgroundImage: "url(/img/wave-pattern.svg)",
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center top'
+              }}
+            >
+              {/* <div className="w-full relative h-[350px] mt-[50px]" 
+                style={{
+                  backgroundImage: "url(/img/multi-currency-illustration.svg)",
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center center'
+              }} /> */}
+            </div>
+            <div className="p-[32px]">
+              <h3 className="text-[30px] leading-[38px] font-playfair-display font-[500] -leading-[0.2em] text-[#270A26] mb-[12px]">Get paid for spending</h3>
+              <p className="leading-[24px] font-[400] text-[#370E36]">Link your card, shop even more than usual, and get cashback on every transaction, paid quarterly.</p>
+            </div>
           </div>
-          <div className="w-1/3 bg-[#EAAEE8] rounded-[16px]">
-
+          <div className="w-full xl:w-1/3 bg-[#EAAEE8] rounded-[16px]  mt-[16px] xl:mt-0">
+            <div className="h-[320px] w-full rounded-t-[16px]"
+              style={{
+                backgroundImage: "url(/img/wave-pattern.svg)",
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center top'
+              }}
+            >
+              {/* <div className="w-full relative h-[350px] mt-[50px]" 
+                style={{
+                  backgroundImage: "url(/img/multi-currency-illustration.svg)",
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center center'
+              }} /> */}
+            </div>
+            <div className="p-[32px]">
+              <h3 className="text-[30px] leading-[38px] font-playfair-display font-[500] -leading-[0.2em] text-[#270A26] mb-[12px]">Always-on support</h3>
+              <p className="leading-[24px] font-[400] text-[#370E36]">Our built-in AI assistant support is available 24/7 to guide you through every step of using BMONI, from saving to spending.</p>
+            </div>
           </div>
         </div>
 
@@ -79,7 +136,7 @@ export default function Home() {
       <UseCases />
 
       <section className="bg-white w-full pb-[120px]">
-        <div className="w-[40%] mx-auto text-center">
+        <div className="w-[80%] xl:w-[40%] mx-auto text-center">
           <h3 className="text-[48px] leading-[60px] font-playfair-display text-[#320032] -tracking-[0.02em]">Your money&apos;s safe and is <br/>always yours</h3>
           <p className="text-[#AF01AF] font-[500] leading-[24px] my-[16px]">That&apos;s our promise to you.</p>
 

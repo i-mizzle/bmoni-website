@@ -5,7 +5,7 @@ const GetStartedSteps = () => {
   return (
      <section className="relative w-full bg-[#270A26] h-[400vh] px-[100px]">
         {/* Sticky Title */}
-        <div className="sticky top-0 z-20 py-[50px] w-[30%] mx-[35%] h-[100vh]">
+        <div className="hidden xl:block xl:sticky top-0 z-20 py-[50px] w-[30%] mx-[35%] h-[100vh]">
             <div className='relative w-full'>
 
                 <div className='w-full h-screen absolute top-[100px] left-0' style={{
@@ -31,31 +31,29 @@ const GetStartedSteps = () => {
                         fill 
                         className='object-contain'/>
                 </div>
-
-
             </div>
         </div>
 
-        <div className='w-full h-[100vh] -mt-[100vh]'>
-            <div className='w-[30%] pt-[150px]'>
+        <div className='w-full h-inherit xl:h-[100vh] -mt-[100vh]'>
+            <div className='w-full xl:w-[30%] pt-[150px]'>
                 <p className='mb-[16px] text-[#FF49E7] font-[500] text-[24px] leading-[32px]'>Get started with BMONI</p>
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>With 3 easy steps</h1>
             </div>
         </div>
         <div className='w-full flex flex-row-reverse h-[100vh] text-white'>
-            <div className='w-[30%] pt-[150px]'>
+            <div className='w-full xl:w-[30%] pt-[150px]'>
                 <p className='mb-[16px] text-[#FF49E7] font-[500] text-[24px] leading-[32px]'>STEP 1</p>
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>Download the BMONI app</h1>
             </div>
         </div>
         <div className='w-full h-[100vh] text-white'>
-            <div className='w-[30%] pt-[150px]'>
+            <div className='w-full xl:w-[30%] pt-[150px]'>
                 <p className='mb-[16px] text-[#FF49E7] font-[500] text-[24px] leading-[32px]'>STEP 2</p>
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>Complete KYC procedures and make your first deposit</h1>
             </div>
         </div>
         <div className='w-full flex flex-row-reverse h-[100vh] text-white'>
-            <div className='w-[30%] pt-[150px]'>
+            <div className='w-full xl:w-[30%] pt-[150px]'>
                 <p className='mb-[16px] text-[#FF49E7] font-[500] text-[24px] leading-[32px]'>STEP 3</p>
                 <h1 className='-tracking-[0.02em] font-playfair-display text-white font-[500] text-[48px] leading-[56px]'>Start enjoying zero boundaries with your money.</h1>
             </div>

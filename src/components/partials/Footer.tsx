@@ -6,10 +6,10 @@ import ChevronIcon from '../elements/lcons/ChevronIcon'
 
 const Footer = () => {
   return (
-    <footer className='w-full px-[64px] pt-[195px] bg-[#270A26]'>
-      <div className='w-full flex items-start justify-between gap-x-[48px]'>
-        <div className='w-1/2'>
-          <div className='w-1/2'>
+    <footer className='w-full px-[20px] xl:px-[64px] pt-[50px] xl:pt-[195px] bg-[#270A26]'>
+      <div className='w-full lg:flex items-start justify-between gap-x-[48px]'>
+        <div className='w-full xl:w-1/2'>
+          <div className='w-full xl:w-1/2'>
             <Link href={`/`} className=''>
               <Image src={`/img/bmoni-logo.svg`} width={110} height={24} alt='' />
             </Link>
@@ -19,8 +19,8 @@ const Footer = () => {
             <DownloadButton />
           </div>
         </div>
-        <div className='w-1/2 flex items-start gap-x-[48px] justify-between'>
-          <div className='text-right w-full'>
+        <div className='w-full mt-[20px] lg:w-1/2 xl:mt-0 xl:flex items-start gap-x-[48px] justify-between'>
+          <div className='lg:text-right w-full'>
             <p className='text-xs leading-[16px] text-[#DCA4DC] mb-[12px]'>PRODUCTS</p>
             <Link href={``} className='block mb-[14px] leading-[24px] text-[#F7E6F7]'>
               Cards
@@ -36,7 +36,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className='text-right w-full'>
+          <div className='mt-[20px] lg:mt-0 lg:text-right w-full'>
             <p className='text-xs leading-[16px] text-[#DCA4DC] mb-[12px]'>USE CASES</p>
             <Link href={``} className='block mb-[14px] leading-[24px] text-[#F7E6F7]'>
               BMONI for Salary Earners
@@ -55,7 +55,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className='text-right w-full'>
+          <div className='mt-[20px] lg:text-right w-full'>
             <p className='text-xs leading-[16px] text-[#DCA4DC] mb-[12px]'>COMPANY</p>
             <Link href={``} className='block mb-[14px] leading-[24px] text-[#F7E6F7]'>
               About Us
@@ -84,7 +84,7 @@ const Footer = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'bottom center',
       }}>
-        <div className='w-full flex items-center justify-between'>
+        <div className='w-full xl:flex items-center justify-between'>
           <div className='w-full'>
             <button className='flex items-center justify-center rounded-full gap-x-[7px] text-white font-[500] leading-[24px] bg-[#B601B626] px-[22px] py-[16px]'>
               <span className='flex items-center justify-center gap-x-[4px]'>

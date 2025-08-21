@@ -4,20 +4,20 @@ import Image from "next/image";
 
 const UseCases: React.FC = () => {
   return (
-    <section className="relative w-full bg-white">
+    <section className="relative w-full bg-white mt-[50px] xl:mt-0">
       {/* Sticky Title */}
-      <div className="sticky top-0 bg-white z-20 py-[50px]">
-        <h2 className="text-[48px] leading-[60px] -tracking-[0.02em] text-[#270A26] font-[500] text-center font-playfair-display">
+      <div className="relative xl:sticky top-0 bg-white z-20 py-[20px] xl:py-[50px]">
+        <h2 className="text-[32px] xl:text-[48px] leading-[32px] xl:leading-[60px] -tracking-[0.02em] text-[#270A26] font-[500] text-center font-playfair-display">
           Use Cases
         </h2>
       </div>
 
       {/* Panels (they just stack + scroll) */}
-      <div className="flex flex-col w-full mt-[50px]">
+      <div className="xl:flex flex-col w-full mt-[50px]">
             
         {/* Panel 1 */}
-        <div className="panel w-full h-screen flex items-center justify-center bg-white px-[32px]">
-          <div className="w-full rounded-[16px] bg-[#F7E6F7] p-[65px] flex items-center justify-between gap-x-[160px] mx-auto">
+        <div className="panel w-full h-inherit xl:h-screen flex items-center justify-center bg-white p-[12px] xl:px-[32px]">
+          <div className="w-full rounded-[16px] bg-[#F7E6F7] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px] mx-auto">
             <div className="w-full">
                 <div className='rounded-full border-2 border-[#FF3FEC] w-max mb-[50px]'>
                     <span className='w-full border-2 border-[#D85CC5] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-white bg-gradient-to-b from-[#D85CC5] to-[#FF3FEC]'>
@@ -40,7 +40,7 @@ const UseCases: React.FC = () => {
                 You&apos;re truly borderless
               </p>
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[20px] xl:mt-0">
               <div
                 className="w-full relative h-[550px] rounded-[15px]"
                 style={{
@@ -55,15 +55,15 @@ const UseCases: React.FC = () => {
         </div>
 
         {/* Panel 2 */}
-        <div className="panel w-full h-screen flex items-center justify-center bg-white px-[32px]">
-          <div className="w-full rounded-[16px] bg-[#E6F4F7] p-[65px] flex items-center justify-between gap-x-[160px]">
+        <div className="panel w-full h-inherit xl:h-screen lg:flex items-center justify-center bg-white px-[12px] xl:px-[32px] mt-[20px] xl:mt-0">
+          <div className="w-full rounded-[16px] bg-[#E6F4F7] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px]">
             <div className="w-full">
-                <div className='rounded-full border-2 border-[#0BCBED] w-max mb-[50px]'>
-                    <span className='w-full border-2 border-[#78E9FA] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-white bg-gradient-to-b from-[#5CCAD8] to-[#3FE5FF]'>
-                        <Image src='/img/icons/coins-hand.svg' width={24} height={24} alt=''  />
-                        BMONI for Trade
-                    </span>
-                </div>
+              <div className='rounded-full border-2 border-[#0BCBED] w-max mb-[50px]'>
+                <span className='w-full border-2 border-[#78E9FA] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-white bg-gradient-to-b from-[#5CCAD8] to-[#3FE5FF]'>
+                  <Image src='/img/icons/coins-hand.svg' width={24} height={24} alt=''  />
+                  BMONI for Trade
+                </span>
+              </div>
 
               <h3 className="font-playfair-display text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
                 Power your hustle
@@ -80,7 +80,7 @@ const UseCases: React.FC = () => {
                 Borderless money for truly borderless businesses
               </p>
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[20px] xl:mt-0">
               <div
                 className="w-full relative h-[550px] rounded-[15px]"
                 style={{
@@ -95,8 +95,8 @@ const UseCases: React.FC = () => {
         </div>
 
         {/* Panel 3 (3-column layout) */}
-        <div className="panel w-full h-screen flex items-center justify-center bg-white px-[32px]">
-          <div className="w-full rounded-[16px] bg-[#F7E6E6] p-[65px] flex items-center justify-between gap-x-[160px]">
+        <div className="panel w-full h-inherit xl:h-screen lg:flex items-center justify-center bg-white px-[12px] xl:px-[32px] mt-[20px] xl:mt-0">
+          <div className="w-full rounded-[16px] bg-[#F7E6E6] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px]">
             <div className="w-full">
               <div
                 className="w-full relative h-[550px] rounded-[15px] scale-x-[-1]"
@@ -109,13 +109,13 @@ const UseCases: React.FC = () => {
               />
             </div>
 
-            <div className="w-full text-center">
-                <div className='rounded-full border-2 border-[#ED0B0F] w-max mb-[50px]'>
-                    <span className='w-full border-2 border-[#FA787A] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-white bg-gradient-to-b from-[#D85C5E] to-[#FF3F42]'>
-                        <Image src='/img/icons/globe-05.svg' width={24} height={24} alt=''  />
-                        BMONI for Cross-border Payments
-                    </span>
-                </div>
+            <div className="w-full text-left xl:text-center mt-[20px] xl:mt-0">
+              <div className='rounded-full border-2 border-[#ED0B0F] w-max mb-[50px]'>
+                <span className='w-full border-2 border-[#FA787A] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-white bg-gradient-to-b from-[#D85C5E] to-[#FF3F42]'>
+                  <Image src='/img/icons/globe-05.svg' width={24} height={24} alt=''  />
+                  BMONI for Cross-border Payments
+                </span>
+              </div>
               <h3 className="font-playfair-display text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
                 Sending money is your love language
               </h3>
@@ -131,7 +131,7 @@ const UseCases: React.FC = () => {
                 We&apos;re here to help you do it better.
               </p>
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[20px] xl:mt-0">
               <div
                 className="w-full relative h-[550px] rounded-[15px]"
                 style={{
@@ -146,8 +146,8 @@ const UseCases: React.FC = () => {
         </div>
 
         {/* Panel 4 */}
-        <div className="panel w-full h-screen bg-white px-[32px]">
-          <div className="w-full rounded-[16px] bg-[#F7EFE6] p-[65px] flex items-center justify-between gap-x-[160px]">
+        <div className="panel w-full h-inherit xl:h-screen bg-white px-[12px] mt-[20px] xl:mt-0 xl:px-[32px]">
+          <div className="w-full rounded-[16px] bg-[#F7EFE6] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px]">
             <div className="w-full">
                 <div className='rounded-full border-2 border-[#ED8F0B] w-max mb-[50px]'>
                     <span className='w-full border-2 border-[#FAC478] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-white bg-gradient-to-b from-[#D8A25C] to-[#FFAC3F]'>
@@ -170,7 +170,7 @@ const UseCases: React.FC = () => {
                 You&apos;ve earned every dollar. Why lose it to fees or delays?
               </p>
             </div>
-            <div className="w-full">
+            <div className="w-full mt-[20px] xl:mt-0">
               <div
                 className="w-full relative h-[550px] rounded-[15px]"
                 style={{
