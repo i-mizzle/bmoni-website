@@ -22,14 +22,38 @@ const LandingHero = () => {
         img.src = "/img/hero-animation.gif"; // preload GIF
         img.onload = () => setGifLoaded(true);
     }, []);
+
+    useEffect(() => {
+        const elements = document.querySelectorAll(".slide-down");
+
+        const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+            }
+            });
+        },
+        { threshold: 0.3 } // trigger when 30% visible
+        );
+
+        elements.forEach((el) => observer.observe(el));
+
+        return () => observer.disconnect();
+    }, []);
     
     return (
         <>
             <section className='w-full min-h-screen h-inherit bg-[#270A26] px-[16px] xl:p-[32px] relative overflow-y-hidden'>
-                <div className='bg-[#370E36] relative rounded-[16px] mt-[20px] xl:mt-0 pt-[100px] xl:pt-0'>
+                
+                <div className='bg-[#370E36] relative rounded-[16px] mt-[20px] z-40 xl:mt-0 pt-[100px] xl:pt-0'>
+                    <span className='hidden xl:block hero-ellipse left-[20px] rounded-full top-[350px] opacity-20 w-[455px] h-[455px]' />
+                    <span className='hidden xl:block hero-ellipse right-[25px] rounded-full opacity-30 top-[350px] w-[455px] h-[455px]' />
+
+                    
                     <div className='w-full min-h-screen h-inherit relative lg:flex items-center justify-between z-20 pt-[40px] px-[20px] lg:px-[40px] xl:px-[100px] mb-[50px]'>
                         <div className='w-full xl:w-1/2 mx-auto relative'>
-                            <div className='w-full xl:w-2/3'>
+                            <div className='w-full xl:w-[80%] relative'>
                                 <h1 className="font-fraunces font-[700] text-white text-[48px] xl:text-[60px] leading-[60px] xl:leading-[72px] animate__animated animate__fadeInDown">
                                     Your money,<br /> but <RotatingText />
                                 </h1>
@@ -69,6 +93,7 @@ const LandingHero = () => {
                                 ) : <Image alt='' src={`/img/hero-graphic.svg`} className='object-contain' fill />}
                             </div>
                         </div>
+                        
                     </div>
 
                     <div className='hidden xl:block absolute w-full h-[60vh] bottom-0 left-0 z-0 bg-opacity-10' style={{
@@ -78,26 +103,34 @@ const LandingHero = () => {
                         backgroundPosition: 'center top'
                     }}>
                         <div className='bg-gradient-to-b mt-[50px] h-[500px] from-[#370E36] to-[#370E3605]' />
+                        
                     </div>
+                    
                 </div>
 
-                <div className=' w-full relative bg-transparent -mt-[50px] pb-[50px]'>
+                <div className='relative w-full'>
                     <span className='hidden xl:block hero-ellipse left-[20px] rounded-full -top-[280px] opacity-50 w-[455px] h-[455px]' />
                     <span className='hidden xl:block hero-ellipse left-[455px] rounded-full opacity-30 -top-[50px] w-[280px] h-[280px]' />
                     <span className='hidden xl:block hero-ellipse right-[455px] rounded-full opacity-30 -top-[50px] w-[280px] h-[280px]' />
                     <span className='hidden xl:block hero-ellipse right-[25px] rounded-full opacity-50 -top-[280px] w-[455px] h-[455px]' />
+                </div>
+
+                <div className=' w-full relative bg-transparent -mt-[50px] pb-[50px] z-30'>
                     
                     <div className='mx-auto w-full min-h-screen h-inherit relative animate__animated animate__fadeInUp '>
-                        {/* <Image src={`/img/hero-phone-mockup.png`} fill className={`object-contain xl:ml-[20px]`} alt='' />
-                        <div className='absolute -bottom-[75px] -left-[120px]'>
-                            <Image src={`/img/hero-card-mockup.png`} width={350} height={150} className={``} alt='' />
-                        </div> */}
-                        <div className='w-full relative'>
-                            <div className='hidden lg:inline-block absolute top-0 left-[20px]'>
-                                <Image alt='' src={`/img/green-card-hand.svg`} width={225} height={195}/>
+                        <div className="w-full relative my-card-section">
+                            {/* Left hand */}
+                            <div className="hidden lg:inline-block absolute top-0 left-[20px] reveal-container">
+                                <div className="slide-down">
+                                <Image alt="" src={`/img/green-card-hand.svg`} width={225} height={195} />
+                                </div>
                             </div>
-                            <div className='hidden lg:inline-block absolute top-0 right-[20px]'>
-                                <Image alt='' src={`/img/pink-card-hand.svg`} width={225} height={195}/>
+
+                            {/* Right hand */}
+                            <div className="hidden lg:inline-block absolute top-0 right-[20px] reveal-container">
+                                <div className="slide-down delay">
+                                <Image alt="" src={`/img/pink-card-hand.svg`} width={225} height={195} />
+                                </div>
                             </div>
                         </div>
 

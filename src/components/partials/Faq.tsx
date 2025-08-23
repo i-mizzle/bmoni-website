@@ -1,38 +1,43 @@
 'use client'
 import React, { useState } from 'react'
 import ChevronIcon from '../elements/lcons/ChevronIcon';
+import ArrowIcon from '../elements/lcons/ArrowIcon';
 
 const Faq = () => {
     const [activeQa, setActiveQa] = useState(0);
     const qas = [
         {
-            question: 'What is BMONI?',
-            answer: 'BMONI is a smart digital wallet built with stablecoin and AI technology that helps you earn interest, get cashback, and save in USD, all from one secure app.'
+            question: 'What is BMONI and how does it work?',
+            answer: "BMONI is a digital wallet that lets you send, receive, and manage money across currencies - all from one app. It's built to be fast, secure, and borderless, making everyday transactions simple, whether local or global."
         },
         {
-            question: 'How do I open a BMONI account?',
-            answer: "Download the app, sign up in minutes, and you're good to go."
+            question: 'What currencies are supported?',
+            answer: "Right now, BMONI supports wallets in Nigerian Naira (NGN) and US Dollars (USD)."
         },
         {
-            question: 'Is my money safe?',
-            answer: 'Your money is held with licensed, regulated banking partners in Nigeria and the U.S, and encrypted end-to-end. With 21 awarded patents and stablecoin infrastructure powering the system, every transaction is secure, fast, and trackable. You can withdraw anytime, no lock-ins, and we stay fully transparent with all compliance.'
+            question: 'How do I top up my wallet?',
+            answer: 'You can add money to your BMONI wallet through bank transfers. Just head to the Wallet tab, tap “Top Up”, and follow the steps to get started.'
         },
         {
-            question: 'How does the BMONI cashback work?',
-            answer: 'Link your card and spend like usual. We give you 1% cashback on every transaction, paid quarterly.'
+            question: 'How do I log in?',
+            answer: "With BMONI, there's no need to remember PINs or passwords. We use biometric authentication - fast, seamless, and secure. Our technology is backed by 22 patents in biometric security, so every time you log in, you're protected by one of the world's most advanced systems."
         },
         {
-            question: 'What if I need help?',
-            answer: 'Our AI support is available 24/7 in-app. You can also reach out through the Help Centre or live chat.'
+            question: 'Is my account tied to my phone?',
+            answer: "Each user can only have one BMONI account, and it's securely linked to your phone number and device. If you ever change your phone or number, just tap “Recover your account” on the login page to regain access."
+        },
+        {
+            question: 'How do I contact support?',
+            answer: "You can reach our team anytime through the in-app chat or by emailing us at support@bmoni.com. We're here to help."
         },
     ]
     return (
         <section className='w-full p-[20px] xl:px-[32px] xl:pt-[32px] pb-[150px] bg-[#270A26] relative'>
             <div className='w-full rounded-[16px] z-50 px-[25px] xl:px-[56px] py-[20px] xl:py-[64px] bg-[#F7E6F7] xl:flex items-start justify-between gap-x-[64px]'>
-                <div className='w-full'>
+                <div className='w-full xl:w-[40%]'>
                     <h1 className='text-[48px] leading-[56px] text-[#270A26] -tracking-[0.02em] font-[500] font-fraunces'>Frequently Asked <br />Questions</h1>
                 </div>
-                <div className='w-full'>
+                <div className='w-full xl:w-[60%]'>
                     {qas.map((qa, qaIndex) => (
                         <div key={qaIndex} className='w-full border-b border-[#D8B4D7]'>
                             <div onClick={()=>{setActiveQa(qaIndex)}} className='cursor-pointer w-full flex items-center justify-between py-[24px]'>
@@ -46,6 +51,11 @@ const Faq = () => {
                             </div>}
                         </div>
                     ))}
+
+                    <button className='px-[22px] py-[12px] rounded-full mt-[24px] text-[#AF01AF] bg-gradient-to-b uppercase flex items-center justify-center gap-x-[8px] font-[600] leading-[24px] cursor-pointer from-[#d85cc52e] to-[#ff3fec2d]'>
+                        Speak to our AI chatbot
+                        <ArrowIcon className='w-[24px] h-[24px] rotate-[180deg]' />
+                    </button>
                 </div>
             </div>
             {/* <div className='w-full h-screen absolute top-0 left-0 z-10' style={{

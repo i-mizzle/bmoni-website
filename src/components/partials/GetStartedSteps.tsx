@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import React from 'react'
 
 const GetStartedSteps = () => {
@@ -62,7 +61,7 @@ const GetStartedSteps = () => {
           <h3 className="text-[32px] xl:text-[48px] leading-[60px] font-fraunces text-[#fff] -tracking-[0.02em]">Start your BMONI journey in 3 simple steps</h3>
         </div>
 
-        <div className='grid grid-cols-1 pag-[16px] lg:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-[16px] lg:grid-cols-3'>
             <div className='w-full'>
                 <div className="w-full relative h-[350px] rounded-[16px] mt-[140px]" 
                     style={{

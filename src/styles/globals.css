@@ -54,3 +54,27 @@ body {
   animation: floatBounce 4s ease-in-out infinite; /* duration controls speed */
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-80px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  opacity: 0; /* default hidden */
+}
+
+.slide-down.animate {
+  animation: slideDown 0.2s ease-out forwards;
+}
+
+.slide-down.animate.delay {
+  animation-delay: 0.3s; /* stagger effect */
+}
+
+
