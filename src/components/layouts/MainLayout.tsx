@@ -1,15 +1,15 @@
 // components/Layout.tsx
 import { ReactNode } from 'react'
 
-import { Inter, Playfair_Display } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import Footer from '../partials/Footer';
 import Header from '../partials/Header';
 import CrispChat from '../elements/CrispChat';
 
-const playfair = Playfair_Display({
+const fraunces = Fraunces({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-playfair-display', 
+  variable: '--font-fraunces', 
   display: 'swap', 
 })
 
@@ -28,7 +28,7 @@ interface LayoutProps {
 export default function MainLayout({ children }: LayoutProps) {
   return (
     <>
-      <div className={`${inter.variable} ${playfair.variable} min-h-screen`}>
+      <div className={`${inter.variable} ${fraunces.variable} min-h-screen`}>
         <Header />
         <main className="mx-auto">{children}</main>
         <Footer />

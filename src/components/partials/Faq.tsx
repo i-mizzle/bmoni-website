@@ -30,13 +30,13 @@ const Faq = () => {
         <section className='w-full p-[20px] xl:px-[32px] xl:pt-[32px] pb-[150px] bg-[#270A26] relative'>
             <div className='w-full rounded-[16px] z-50 px-[25px] xl:px-[56px] py-[20px] xl:py-[64px] bg-[#F7E6F7] xl:flex items-start justify-between gap-x-[64px]'>
                 <div className='w-full'>
-                    <h1 className='text-[48px] leading-[56px] text-[#270A26] -tracking-[0.02em] font-[500] font-playfair-display'>Frequently Asked <br />Questions</h1>
+                    <h1 className='text-[48px] leading-[56px] text-[#270A26] -tracking-[0.02em] font-[500] font-fraunces'>Frequently Asked <br />Questions</h1>
                 </div>
                 <div className='w-full'>
                     {qas.map((qa, qaIndex) => (
                         <div key={qaIndex} className='w-full border-b border-[#D8B4D7]'>
                             <div onClick={()=>{setActiveQa(qaIndex)}} className='cursor-pointer w-full flex items-center justify-between py-[24px]'>
-                                <h3 className='font-playfair-display font-[500] text-[24px] leading-[32px] text-[#270A26]'>{qa.question}</h3>
+                                <h3 className='font-fraunces font-[500] text-[24px] leading-[32px] text-[#270A26]'>{qa.question}</h3>
                                 <button>
                                     <ChevronIcon className={`text-black w-[16px] h-[16px] transition duration-200 ${activeQa === qaIndex ? '-rotate-90' : 'rotate-90'}`} />
                                 </button>

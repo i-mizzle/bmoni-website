@@ -46,25 +46,25 @@ export default function ScrollReveal() {
 
   return (
     <div ref={containerRef} className="w-full">
-        <p className="reveal-text font-[700] font-playfair-display text-[48px] leading-[60px] mb-[50px]">
+        <p className="reveal-text font-[700] font-fraunces text-[48px] leading-[60px] mb-[50px]">
           You hustle hard.<br />Shop like the world is your market.<br />Protect
           your funds in a stable currency.
         </p>
-        <p className="reveal-text font-[700] font-playfair-display text-[48px] leading-[60px] mb-[50px]">
+        <p className="reveal-text font-[700] font-fraunces text-[48px] leading-[60px] mb-[50px]">
           But your bank? Still Stuck in the past
         </p>
-        <p className="reveal-text font-[700] font-playfair-display text-[48px] leading-[60px] mb-[50px]">
+        <p className="reveal-text font-[700] font-fraunces text-[48px] leading-[60px] mb-[50px]">
           Payment delays. Hidden fees. Broken cards. Zero flexibility.
         </p>
 
         <div className="mb-[50px] bg-[#C94CD7] h-[2px] w-full" />
 
-        <p className="reveal-text font-[700] font-playfair-display text-[48px] leading-[60px] mb-[50px]">
+        <p className="reveal-text font-[700] font-fraunces text-[48px] leading-[60px] mb-[50px]">
           You deserve better, and that&apos;s why we built BMONI, because your
           money should move like you do.
         </p>
 
-        <p className="reveal-text font-[700] font-playfair-display text-[48px] leading-[60px] tracking-[0.5em] mb-[50px]">
+        <p className="reveal-text font-[700] font-fraunces text-[48px] leading-[60px] tracking-[0.5em] mb-[50px]">
           BORDERLESS
         </p>
       </div>
