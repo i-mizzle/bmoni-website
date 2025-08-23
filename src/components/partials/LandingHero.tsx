@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import DownloadButton from '../elements/DownloadButton'
 // import PartnersScroll from './PartnersScroll'
 import RotatingText from '../elements/RotatingText'
@@ -14,6 +15,13 @@ const LandingHero = () => {
         '/img/partners/aluko-oyebode.svg',
     ];
 
+    const [gifLoaded, setGifLoaded] = useState(false);
+
+    useEffect(() => {
+        const img = new window.Image();
+        img.src = "/img/hero-animation.gif"; // preload GIF
+        img.onload = () => setGifLoaded(true);
+    }, []);
     
     return (
         <>
@@ -38,10 +46,10 @@ const LandingHero = () => {
                                         {partners.map((logo, index) => (
                                         <div key={index} className={`w-[100px] h-[40px] flex items-center relative`}>
                                             <Image 
-                                            src={logo} 
-                                            alt={`Logo ${index % partners.length + 1}`} 
-                                            fill 
-                                            className='object-contain' />
+                                                src={logo} 
+                                                alt={`Logo ${index % partners.length + 1}`} 
+                                                fill 
+                                                className='object-contain' />
                                         </div>
                                         ))}
                                     </div>
@@ -50,7 +58,15 @@ const LandingHero = () => {
                         </div>
                         <div className='w-full xl:w-1/2'>
                             <div className='w-full h-[400px] xl:h-[800px] relative animate__animated animate__fadeInUp'>
-                                <Image alt='' src={`/img/hero-illustration-2.svg`} className='object-contain' fill />
+
+                                {gifLoaded ? (
+                                    <Image
+                                        alt="hero illustration animated"
+                                        src="/img/hero-animation.gif"
+                                        className="object-contain"
+                                        fill
+                                    />
+                                ) : <Image alt='' src={`/img/hero-graphic.svg`} className='object-contain' fill />}
                             </div>
                         </div>
                     </div>
@@ -83,9 +99,6 @@ const LandingHero = () => {
                             <div className='hidden lg:inline-block absolute top-0 right-[20px]'>
                                 <Image alt='' src={`/img/pink-card-hand.svg`} width={225} height={195}/>
                             </div>
-
-
-
                         </div>
 
                         <div className='relative w-[90%] xl:w-1/2 mx-auto pt-[200px]'>
