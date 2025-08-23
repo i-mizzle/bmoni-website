@@ -6,7 +6,12 @@ const UseCases: React.FC = () => {
   return (
     <section className="relative w-full bg-[#FFF7FF] mt-[50px] xl:mt-0">
       {/* Sticky Title */}
-      <div className="relative xl:sticky top-0 bg-[#FFF7FF] z-20 py-[20px] xl:py-[50px]">
+      <div className="relative xl:sticky bg-[#FFF7FF] top-0 z-20 py-[20px] xl:py-[50px]" style={{
+          backgroundImage: "url(/img/use-cases/use-cases-pattern-bg.png)",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center top",
+        }}>
         <h2 className="text-[32px] xl:text-[48px] leading-[32px] xl:leading-[60px] -tracking-[0.02em] text-[#270A26] font-[500] text-center font-fraunces">
           Use Cases
         </h2>
@@ -19,13 +24,11 @@ const UseCases: React.FC = () => {
         <div className="panel w-full h-inherit xl:h-screen flex items-center justify-center bg-[#FFF7FF] p-[12px] xl:px-[32px]">
           <div className="w-full rounded-[16px] bg-[#F7E6F7] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px] mx-auto">
             <div className="w-full">
-                <div className='rounded-full border-2 border-[#FF3FEC] w-max mb-[50px]'>
-                    <span className='w-full border-2 border-[#D85CC5] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#FFF7FF] bg-gradient-to-b from-[#D85CC5] to-[#FF3FEC]'>
-                        <Image src='/img/icons/luggage-02.svg' width={24} height={24} alt=''  />
-                        BMONI for Nomads
-                    </span>
-                </div>
-              <h3 className="font-fraunces text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
+              <span className='w-max px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#AF01AF] bg-gradient-to-b from-[#d85cc51a] to-[#ff3fec1a]'>
+                  <Image src='/img/icons/luggage-02.svg' width={24} height={24} alt=''  />
+                  BMONI for Nomads
+              </span>
+              <h3 className="font-fraunces mt-[50px] text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
                 Spend here, there, everywhere
               </h3>
               <p className="font-[400] text-[18px] leading-[28px] text-[#5D395D]">
@@ -44,7 +47,7 @@ const UseCases: React.FC = () => {
               <div
                 className="w-full relative h-[550px] rounded-[15px]"
                 style={{
-                  backgroundImage: "url(/img/use-cases/passport-girl-2.png)",
+                  backgroundImage: "url(/img/use-cases/travel-girl.png)",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center top",
@@ -58,14 +61,12 @@ const UseCases: React.FC = () => {
         <div className="panel w-full h-inherit xl:h-screen lg:flex items-center justify-center bg-[#FFF7FF] px-[12px] xl:px-[32px] mt-[20px] xl:mt-0">
           <div className="w-full rounded-[16px] bg-[#E6F4F7] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px]">
             <div className="w-full">
-              <div className='rounded-full border-2 border-[#0BCBED] w-max mb-[50px]'>
-                <span className='w-full border-2 border-[#78E9FA] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#FFF7FF] bg-gradient-to-b from-[#5CCAD8] to-[#3FE5FF]'>
+                <span className='w-max px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#0195AF] bg-gradient-to-b from-[#5ccad82f] to-[#3fe5ff29]'>
                   <Image src='/img/icons/coins-hand.svg' width={24} height={24} alt=''  />
                   BMONI for Trade
                 </span>
-              </div>
 
-              <h3 className="font-fraunces text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
+              <h3 className="font-fraunces mt-[50px] text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
                 Power your hustle
               </h3>
               <p className="font-[400] text-[18px] leading-[28px] text-[#5D395D]">
@@ -84,7 +85,7 @@ const UseCases: React.FC = () => {
               <div
                 className="w-full relative h-[550px] rounded-[15px]"
                 style={{
-                  backgroundImage: "url(/img/use-cases/pos-man-2.png)",
+                  backgroundImage: "url(/img/use-cases/working-man.png)",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center top",
@@ -110,13 +111,11 @@ const UseCases: React.FC = () => {
             </div>
 
             <div className="w-full text-left xl:text-center mt-[20px] xl:mt-0">
-              <div className='rounded-full border-2 border-[#ED0B0F] w-max mb-[50px]'>
-                <span className='w-full border-2 border-[#FA787A] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#FFF7FF] bg-gradient-to-b from-[#D85C5E] to-[#FF3F42]'>
+                <span className='w-max px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#AF0104] bg-gradient-to-b from-[#d85c5e1f] to-[#ff3f4229]'>
                   <Image src='/img/icons/globe-05.svg' width={24} height={24} alt=''  />
                   BMONI for Cross-border Payments
                 </span>
-              </div>
-              <h3 className="font-fraunces text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
+              <h3 className="font-fraunces mt-[50px] text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
                 Sending money is your love language
               </h3>
               <p className="font-[400] text-[18px] leading-[28px] text-[#5D395D]">
@@ -149,13 +148,13 @@ const UseCases: React.FC = () => {
         <div className="panel w-full h-inherit xl:h-screen bg-[#FFF7FF] px-[12px] mt-[20px] xl:mt-0 xl:px-[32px]">
           <div className="w-full rounded-[16px] bg-[#F7EFE6] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px]">
             <div className="w-full">
-                <div className='rounded-full border-2 border-[#ED8F0B] w-max mb-[50px]'>
-                    <span className='w-full border-2 border-[#FAC478] px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#FFF7FF] bg-gradient-to-b from-[#D8A25C] to-[#FFAC3F]'>
+                {/* <div className='rounded-full border-2 border-[#ED8F0B] w-max mb-[50px]'> */}
+                    <span className='w-max px-[22px] py-[14px] rounded-full flex items-center justify-center gap-x-[6px] font-[600] leading-[24px] text-[#AF6101] bg-gradient-to-b from-[#d8a25c29] to-[#ffac3f25]'>
                         <Image src='/img/icons/laptop-02.svg' width={24} height={24} alt=''  />
                         BMONI for Freelancers
                     </span>
-                </div>
-              <h3 className="font-fraunces text-[48px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
+                {/* </div> */}
+              <h3 className="font-fraunces text-[48px] mt-[50px] leading-[60px] text-[#270A26] -tracking-[0.02em] mb-[16px]">
                 Get paid like a pro
               </h3>
               <p className="font-[400] text-[18px] leading-[28px] text-[#5D395D]">
@@ -174,7 +173,7 @@ const UseCases: React.FC = () => {
               <div
                 className="w-full relative h-[550px] rounded-[15px]"
                 style={{
-                  backgroundImage: "url(/img/use-cases/laptop-girl-2.png)",
+                  backgroundImage: "url(/img/use-cases/nomad-girl.png)",
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center top",

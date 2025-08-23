@@ -38,3 +38,19 @@ body {
   scroll-snap-align: start;
 } */
 
+@keyframes floatBounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px); /* how high it floats */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-bounce {
+  animation: floatBounce 4s ease-in-out infinite; /* duration controls speed */
+}
+

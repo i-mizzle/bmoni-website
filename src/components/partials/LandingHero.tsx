@@ -103,10 +103,10 @@ const LandingHero = () => {
 
                         <div className='relative w-[90%] xl:w-1/2 mx-auto pt-[200px]'>
                             <div className='absolute top-[420px] -left-[100px]'>
-                                <Image alt='' src={`/img/coin.svg`} width={56} height={52}/>
+                                <Image alt='' src={`/img/coin.svg`} width={56} height={52} className='float-bounce'/>
                             </div>
                             <div className='absolute top-[620px] -left-[150px]'>
-                                <Image alt='' src={`/img/coin.svg`} width={67} height={62}/>
+                                <Image alt='' src={`/img/coin.svg`} width={67} height={62} className='float-bounce'/>
                             </div>
                             <span className='border-2 rounded-full border-[#ED0BBC] px-[22px] py-[12px] text-[#C94CD7] leading-[24px] font-inter mb-[24px] inline-block'>WHY BMONI</span>
                             <p className='font-fraunces text-white text-[24px] xl:text-[42px] leading-[32px] xl:leading-[64px] mb-[32px]'>You live, work, and shop across borders. But your bank hasn&apos;t kept up.</p>

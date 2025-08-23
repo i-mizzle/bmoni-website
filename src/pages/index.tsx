@@ -36,7 +36,7 @@ export default function Home() {
             
             <div className="w-full relative h-[350px] rounded-[16px]" 
               style={{
-                backgroundImage: "url(/img/features/4-cards-pos.svg)",
+                backgroundImage: "url(/img/features/cards-for-everything.svg)",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center'
@@ -87,7 +87,7 @@ export default function Home() {
 
       <section className="bg-[#FFF7FF] w-full pb-[120px]">
         <div className="w-[80%] xl:w-[40%] mx-auto text-center">
-          <h3 className="text-[48px] leading-[60px] font-fraunces text-[#320032] -tracking-[0.02em]">Your money&apos;s safe and is <br/>always yours</h3>
+          <h3 className="text-[48px] leading-[60px] font-fraunces text-[#320032] -tracking-[0.02em]">Your Money. Always Safe. Always Yours.</h3>
           <p className="text-[#AF01AF] font-[500] leading-[24px] my-[16px]">That&apos;s our promise to you.</p>
 
           <p className="font-[400] text-[18px] leading-[26px] text-[#5D395D]">BMONI is built in partnership with licensed banking and trusted technology partners. Your funds are fully protected, your transactions are encrypted, and your data stays private — so you can manage your money with total peace of mind.</p>
