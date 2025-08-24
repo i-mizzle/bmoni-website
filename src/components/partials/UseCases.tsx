@@ -119,7 +119,7 @@ const UseCases: React.FC = () => {
                 Spend here, there, everywhere
               </h3>
               <p className="font-[400] text-[18px] leading-[28px] text-[#5D395D]">
-                No more payment worries when you travel. BMONI gives you VIP spending power with multi-currency wallets and global-ready cards — virtual or physical — that power local spending for flights, hotels, and withdrawals, online or in-person, at home or abroad, wherever your passport takes you.
+                Wherever you go, BMONI goes with you. With our multi-currency wallets and globally accepted cards, virtual or physical, you can pay for flights, hotels, online subscriptions, shopping, and withdrawals anywhere in the world, online or in person.
               </p>
 
               <p className="font-[500] text-[16px] mt-[40px] leading-[28px] text-[#AF01AF]">
@@ -243,11 +243,7 @@ const UseCases: React.FC = () => {
                 Get paid like a pro
               </h3>
               <p className="font-[400] text-[18px] leading-[28px] text-[#5D395D]">
-                Whether you&apos;re designing in Lagos or coding for a client in
-                London, BMONI gives you dedicated NGN, USD, GBP, and EUR local
-                virtual accounts to receive payments globally, so your payments
-                always find you, no matter where they&apos;re coming from. You
-                focus on the work. We&apos;ll handle the rest.
+                Whether you&apos;re a freelancer in Lagos or coding for a client in London, BMONI gives you dedicated NGN and USD  virtual accounts to receive payments worldwide. Your money always finds you, no matter where it&apos;s coming from. You focus on the work, we&apos;ll handle the rest.
               </p>
 
               <p className="font-[500] text-[16px] mt-[40px] leading-[28px] text-[#AF6101]">

@@ -28,8 +28,8 @@ export default function Home() {
               }} />
 
             <div className="p-[10px] xl:p-[32px] mt-[20px] lg:mt-[40px]">
-              <h3 className="text-[30px] leading-[38px] font-fraunces font-[500] -leading-[0.2em] text-[#ffffff] mb-[12px]">Multi-currency<br /> local wire details</h3>
-              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Receive money through local NGN and USD virtual accounts, no matter where you are. Perfect for freelancers, family support, and global payments.</p>
+              <h3 className="text-[30px] leading-[38px] font-fraunces font-[500] -leading-[0.2em] text-[#ffffff] mb-[12px]">Multi-currency Accounts</h3>
+              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Receive money instantly with local NGN and USD virtual accounts. Designed for freelancers, families, and anyone moving money across borders.</p>
             </div>
           </div>
           <div className="w-full bg-[#370E36] rounded-[16px] p-[10px] xl:p-[25px] border border-[#ffffff20]">
@@ -44,7 +44,7 @@ export default function Home() {
 
             <div className="p-[10px] xl:p-[32px] mt-[20px] lg:mt-[40px]">
               <h3 className="text-[30px] leading-[38px] font-fraunces font-[500] -leading-[0.2em] text-[#ffffff] mb-[12px]">Cards for everything</h3>
-              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Create and manage multiple virtual or physical cards for everything  — entertainment subscriptions, travel, household bills, or everyday spending — in one tap and from your account.</p>
+              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Create and manage multiple virtual or physical cards for subscriptions, travel, household bills, or everyday spending - with  just a tap.</p>
             </div>
           </div>
           <div className="w-full bg-[#370E36] rounded-[16px] p-[10px] xl:p-[25px] border border-[#ffffff20]">
@@ -58,8 +58,8 @@ export default function Home() {
               }} />
 
             <div className="p-[10px] xl:p-[32px] mt-[20px] lg:mt-[40px]">
-              <h3 className="text-[30px] leading-[38px] font-fraunces font-[500] -leading-[0.2em] text-[#ffffff] mb-[12px]">Get paid for spending</h3>
-              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Link your card, shop even more than usual, and get cashback on every transaction, paid quarterly.</p>
+              <h3 className="text-[30px] leading-[38px] font-fraunces font-[500] -leading-[0.2em] text-[#ffffff] mb-[12px]">Turn Spending into Earning</h3>
+              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Shop with your linked card and receive cashback rewards.</p>
             </div>
           </div>
           <div className="w-full bg-[#370E36] rounded-[16px] p-[10px] xl:p-[25px] border border-[#ffffff20]">
@@ -74,7 +74,7 @@ export default function Home() {
 
             <div className="p-[10px] xl:p-[32px] mt-[20px] lg:mt-[40px]">
               <h3 className="text-[30px] leading-[38px] font-fraunces font-[500] -leading-[0.2em] text-[#ffffff] mb-[12px]">Preserve your funds</h3>
-              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Your funds are instantly converted to stable Naira and USD automatically, which protects it from inflation and allows you to earn interest while you&apos;re at it.</p>
+              <p className="leading-[24px] font-[400] text-[#F7E6F7]">Your money is instantly converted into stable USD, protecting it from inflation and shielding you from the devaluation of the naira.</p>
             </div>
           </div>
           
