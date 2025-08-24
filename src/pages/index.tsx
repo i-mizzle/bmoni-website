@@ -13,7 +13,7 @@ export default function Home() {
       <LandingHero />
 
       <section className="w-full bg-[#270A26] h-inherit min-h-screen p-[20px] xl:px-[32px] xl:pb-[50px] xl:pt-[85px]">
-        <div className="w-full px-[20px] xl:w-1/3 mx-auto text-center mb-[65px]">
+        <div className="w-full px-[20px] xl:w-3/4 2xl:w-1/3 mx-auto text-center mb-[65px]">
           <h1 className="font-fraunces font-[500] text-white text-[48px] leading-[56px]">Everything you want from your money</h1>
         </div>
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-[16px] px-[10px] xl:px-[70px]">
