@@ -51,7 +51,7 @@ export default function Home() {
             
             <div className="w-full relative h-[350px] rounded-[16px]" 
               style={{
-                backgroundImage: "url(/img/features/phone-in-hand.svg)",
+                backgroundImage: "url(/img/features/get-paid-for-spending.svg)",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center'
@@ -66,7 +66,7 @@ export default function Home() {
             
             <div className="w-full relative h-[350px] rounded-[16px]" 
               style={{
-                backgroundImage: "url(/img/features/2-cards-pos.svg)",
+                backgroundImage: "url(/img/features/preserve-your-funds.svg)",
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center center'

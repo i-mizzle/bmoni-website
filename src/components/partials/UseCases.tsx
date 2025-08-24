@@ -106,7 +106,7 @@ const UseCases: React.FC = () => {
       </div>
 
       {/* Panels wrapper */}
-      <div className="relative w-full min-h-[500vh]">
+      <div className="relative w-full h-inherit  xl:min-h-[500vh]">
         {/* Panel 1 */}
         <div className="xl:sticky top-[80px] z-10 h-inherit xl:h-screen flex items-center justify-center p-[12px] xl:px-[32px]">
           <div className="w-full rounded-[16px] bg-[#F7E6F7] p-[20px] xl:p-[65px] lg:flex items-center justify-between gap-x-[160px]">
@@ -119,9 +119,12 @@ const UseCases: React.FC = () => {
                 Spend here, there, everywhere
               </h3>
               <p className="font-[400] text-[18px] leading-[28px] text-[#5D395D]">
-                No more payment worries when you travel. BMONI gives you VIP spending power with
-                multi-currency wallets and global-ready cards…
+                No more payment worries when you travel. BMONI gives you VIP spending power with multi-currency wallets and global-ready cards — virtual or physical — that power local spending for flights, hotels, and withdrawals, online or in-person, at home or abroad, wherever your passport takes you.
               </p>
+
+              <p className="font-[500] text-[16px] mt-[40px] leading-[28px] text-[#AF01AF]">
+                 You&apos;re truly borderless
+               </p>
             </div>
             <div className="w-full mt-[20px] xl:mt-0">
               <div
