@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className='w-full px-[20px] xl:px-[64px] pt-[50px] xl:pt-[195px] bg-[#270A26]'>
       <div className='w-full lg:flex items-start justify-between gap-x-[48px]'>
-        <div className='w-full xl:w-1/2'>
+        <div className='w-full xl:w-1/3 2xl:w-1/2'>
           <div className='w-full xl:w-1/2'>
             <Link href={`/`} className=''>
               <Image src={`/img/bmoni-logo.svg`} width={110} height={24} alt='' />
@@ -19,7 +19,7 @@ const Footer = () => {
             <DownloadButton />
           </div>
         </div>
-        <div className='w-full mt-[20px] lg:w-1/2 xl:mt-0 xl:flex items-start gap-x-[48px] justify-between'>
+        <div className='w-full mt-[20px] lg:w-1/2 xl:w-2/3 2xl:w-1/2 xl:mt-0 xl:flex items-start gap-x-[48px] justify-between'>
           <div className='lg:text-right w-full'>
             <p className='text-xs leading-[16px] text-[#DCA4DC] mb-[12px]'>PRODUCTS</p>
             <Link href={``} className='block mb-[14px] leading-[24px] text-[#F7E6F7]'>
@@ -96,7 +96,7 @@ const Footer = () => {
           </div>
 
           <div className='w-full flex items-center justify-center gap-x-[48px]'>
-            <p className='text-[#DCA4DC] leading-[24px]'><a href='mailto:contact@bkey.com'>contact@bkey.com</a> | <a href="tel:+2341234567890">+234 123 456 7890</a></p>
+            <p className='text-[#DCA4DC] leading-[24px]'><a href='mailto:contact@bkey.com'>support@bmoni.com</a></p>
             <div className='flex flex-row-reverse items-center justify-between gap-x-[24px]'>
               <Link href={``} target='_blank'>
                 <Image src={`/img/icons/social-facebook.svg`} width={24} height={24} alt='' />

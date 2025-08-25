@@ -1,5 +1,5 @@
 {
-  "name": "bmoni-wesite",
+  "name": "bmoni-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/swc-linux-x64-gnu": "^15.5.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

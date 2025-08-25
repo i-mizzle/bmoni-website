@@ -57,7 +57,7 @@ const LandingHero = () => {
                                 <h1 className="font-fraunces font-[700] text-white text-[48px] xl:text-[60px] leading-[60px] xl:leading-[72px] animate__animated animate__fadeInDown">
                                     Your money,<br /> but <RotatingText />
                                 </h1>
-                                <p className='text-[#F7E6F7] text-[18px] leading-[28px] mt-[24px]  animate__animated animate__fadeInDown'>Powered by stablecoin and AI technology to help you earn, spend, save, and grow, all without banking limitations getting in your way.</p>
+                                <p className='text-[#F7E6F7] text-[18px] leading-[28px] mt-[24px]  animate__animated animate__fadeInDown'>We combine modern, cost-effective technologies like stablecoin and AI to create bank-like services designed for today&apos;s world. Our patented technology ensures your money moves smarter, faster, and cheaper, without the limitations of traditional banks.</p>
 
                                 <div className='w-max mt-[48px]'>
                                     <DownloadButton />
@@ -122,30 +122,38 @@ const LandingHero = () => {
                             {/* Left hand */}
                             <div className="hidden lg:inline-block absolute top-0 left-[20px] reveal-container">
                                 <div className="slide-down">
-                                <Image alt="" src={`/img/green-card-hand.svg`} width={225} height={195} />
+                                <Image alt="" src={`/img/green-card-hand.svg`} width={180} height={195} />
                                 </div>
                             </div>
 
                             {/* Right hand */}
                             <div className="hidden lg:inline-block absolute top-0 right-[20px] reveal-container">
                                 <div className="slide-down delay">
-                                <Image alt="" src={`/img/pink-card-hand.svg`} width={225} height={195} />
+                                <Image alt="" src={`/img/pink-card-hand.svg`} width={180} height={195} />
                                 </div>
                             </div>
                         </div>
 
                         <div className='relative w-[90%] xl:w-1/2 mx-auto pt-[200px]'>
-                            <div className='absolute top-[420px] -left-[100px]'>
-                                <Image alt='' src={`/img/coin.svg`} width={56} height={52} className='float-bounce'/>
+                            {/* <div className='absolute bottom-[20px] -left-[100px]'>
+                                <Image alt='' src={`/img/bmoni-coin.svg`} width={56} height={52} className='float-bounce'/>
                             </div>
-                            <div className='absolute top-[620px] -left-[150px]'>
-                                <Image alt='' src={`/img/coin.svg`} width={67} height={62} className='float-bounce'/>
-                            </div>
+                            <div className='absolute bottom-[20px] right-[150px]'>
+                                <Image alt='' src={`/img/bmoni-coin.svg`} width={67} height={62} className='float-bounce'/>
+                            </div> */}
                             <span className='border-2 rounded-full border-[#ED0BBC] px-[22px] py-[12px] text-[#C94CD7] leading-[24px] font-inter mb-[24px] inline-block'>WHY BMONI</span>
                             <p className='font-fraunces text-white text-[24px] xl:text-[42px] leading-[32px] xl:leading-[64px] mb-[32px]'>You live, work, and shop across borders. But your bank hasn&apos;t kept up.</p>
                             <p className='font-fraunces text-white text-[24px] xl:text-[42px] leading-[28px] xl:leading-[64px]'>That&apos;s why we built BMONI.Your money should move like you do.</p>
 
-                            <p className='mt-[72px] text-[42px] xl:text-[64px] leading-[60px] uppercase font-[700] tracking-[0.2em] font-fraunces text-[#BF34BF]'>BORDERLESS</p>
+                        </div>
+
+                        <div className='w-[90%] xl:w-[60%] xl:flex items-center justify-between gap-x-[60px] mx-auto mt-[72px]'>
+                            <Image alt='' src={`/img/bmoni-coin.svg`} width={56} height={52} className='float-bounce hidden xl:block'/>
+
+                            <p className='text-[42px] xl:text-[64px] leading-[60px] uppercase font-[700] tracking-[0.2em] xl:tracking-[0.69em] font-fraunces text-[#BF34BF]'>BORDERLESS</p>
+
+                            <Image alt='' src={`/img/bmoni-coin.svg`} width={56} height={52} className='float-bounce hidden xl:block'/>
+
                         </div>
                     </div>
                 </div>
