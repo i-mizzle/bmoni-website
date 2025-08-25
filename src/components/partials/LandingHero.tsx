@@ -147,7 +147,7 @@ const LandingHero = () => {
 
                         </div>
 
-                        <div className='w-[90%] xl:w-[60%] xl:flex items-center justify-between gap-x-[60px] mx-auto mt-[72px]'>
+                        <div className='w-[90%] xl:w-[60%] xl:flex items-center justify-center gap-x-[60px] mx-auto mt-[72px]'>
                             <Image alt='' src={`/img/bmoni-coin.svg`} width={56} height={52} className='float-bounce hidden xl:block'/>
 
                             <p className='text-[42px] xl:text-[64px] leading-[60px] uppercase font-[700] tracking-[0.2em] xl:tracking-[0.69em] font-fraunces text-[#BF34BF]'>BORDERLESS</p>
