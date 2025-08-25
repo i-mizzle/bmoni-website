@@ -4,7 +4,7 @@ import { ReactNode } from 'react'
 import { Fraunces, Inter } from "next/font/google";
 import Footer from '../partials/Footer';
 import Header from '../partials/Header';
-import CrispChat from '../elements/CrispChat';
+// import CrispChat from '../elements/CrispChat';
 import Head from 'next/head';
 
 const fraunces = Fraunces({
@@ -40,7 +40,6 @@ export default function MainLayout({ children }: LayoutProps) {
         <main className="mx-auto">{children}</main>
         <Footer />
       </div>
-      <CrispChat />
     </>
   )
 }
