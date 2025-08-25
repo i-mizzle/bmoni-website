@@ -143,7 +143,7 @@ const LandingHero = () => {
                             </div> */}
                             <span className='border-2 rounded-full border-[#ED0BBC] px-[22px] py-[12px] text-[#C94CD7] leading-[24px] font-inter mb-[24px] inline-block'>WHY BMONI</span>
                             <p className='font-fraunces text-white text-[24px] xl:text-[42px] leading-[32px] xl:leading-[64px] mb-[32px]'>You live, work, and shop across borders. But your bank hasn&apos;t kept up.</p>
-                            <p className='font-fraunces text-white text-[24px] xl:text-[42px] leading-[28px] xl:leading-[64px]'>That&apos;s why we built BMONI.Your money should move like you do.</p>
+                            <p className='font-fraunces text-white text-[24px] xl:text-[42px] leading-[28px] xl:leading-[64px]'>That&apos;s why we built BMONI. Your money should move like you do.</p>
 
                         </div>
 
