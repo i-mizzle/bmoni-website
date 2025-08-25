@@ -55,7 +55,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className='mt-[20px] lg:text-right w-full'>
+          <div className='mt-[20px] lg:mt-0 lg:text-right w-full'>
             <p className='text-xs leading-[16px] text-[#DCA4DC] mb-[12px]'>COMPANY</p>
             <Link href={``} className='block mb-[14px] leading-[24px] text-[#F7E6F7]'>
               About Us
